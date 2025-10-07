@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="50dp"
+            android:text="Nombre de la persona:"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="250dp"
+            android:background="#D7CDCD"
+            android:ems="10"
+            android:hint="Nombre de la persona"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textColorHint="#040404" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="200dp"
+            android:text="Datos"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="150dp"
+            android:background="#D7CDCD"
+            android:ems="10"
+            android:hint="Información relevante"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="50dp"
+            android:backgroundTint="#49D1A6"
+            android:onClick="grabar"
+            android:text="Grabar"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="80dp"
+            android:layout_marginBottom="50dp"
+            android:backgroundTint="#5D5861"
+            android:onClick="recuperar"
+            android:text="Recuperar"
+            android:textSize="20sp" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
