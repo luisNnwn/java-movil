@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="3dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- NOMBRE COMPLETO -->
+        <TextView
+            android:id="@+id/tvNombreDocente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre del docente"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <!-- FACULTAD -->
+        <TextView
+            android:id="@+id/tvFacultadDocente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Facultad de Ingeniería"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginTop="2dp" />
+
+        <!-- FUTURO: MATERIAS DEL DOCENTE -->
+        <TextView
+            android:id="@+id/tvMateriasDocente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Materias: (pendiente)"
+            android:textSize="13sp"
+            android:textColor="#888888"
+            android:layout_marginTop="4dp" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

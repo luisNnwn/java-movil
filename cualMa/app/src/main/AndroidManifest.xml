@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CualMa"
+        tools:targetApi="31">
+        <activity
+            android:name=".CatalogoMateriasAlumno"
+            android:exported="false" />
+        <activity
+            android:name=".FormAlumnoDatos"
+            android:exported="false" />
+        <activity
+            android:name=".item_mi_docente"
+            android:exported="false" />
+        <activity
+            android:name=".FormAlumnoDocentes"
+            android:exported="false" />
+        <activity
+            android:name=".FormAlumnoMaterias"
+            android:exported="false" />
+        <activity
+            android:name=".AlumnoMenuActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".EstudianteMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FormAdminDocentes"
+            android:exported="false" />
+        <activity
+            android:name=".FormAdminAlumnos"
+            android:exported="false" />
+        <activity
+            android:name=".FormAdminMaterias"
+            android:exported="false" />
+        <activity
+            android:name=".AlumnoMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".seleccionRol"
+            android:exported="false" />
+        <activity
+            android:name=".FormMateriaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FormAlumnoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditarPerfilAlumnoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecordatoriosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HorarioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SeleccionarMateriasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AsignarMateriasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CRUDMateriasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CRUDAlumnosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".onboardingCualMa"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
