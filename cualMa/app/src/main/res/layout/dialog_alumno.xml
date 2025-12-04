@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nuevo alumno"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- CARNET -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilCarnet"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Carnet">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etCarnet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- NOMBRES -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilNombres"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Nombres">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etNombres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- APELLIDOS -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilApellidos"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Apellidos">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etApellidos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- FACULTAD -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Facultad"
+            android:layout_marginTop="8dp" />
+
+        <Spinner
+            android:id="@+id/spFacultadAlumno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- CARRERA -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carrera"
+            android:layout_marginTop="8dp" />
+
+        <Spinner
+            android:id="@+id/spCarreraAlumno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- BOTÓN GUARDAR -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGuardarAlumno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Guardar"
+            android:textAllCaps="false"
+            app:backgroundTint="#ec8c04"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

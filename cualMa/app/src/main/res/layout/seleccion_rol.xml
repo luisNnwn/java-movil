@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".seleccionRol">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <ImageView
+            android:id="@+id/imageViewUFG"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="225dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logoinstitucional" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="70dp"
+            android:text="Seleccion de Rol"
+            android:textSize="30sp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewAdministrador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="450dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageButton
+                android:id="@+id/imgButton1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:padding="0dp"
+                android:paddingTop="50dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/administrador" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="550dp"
+            android:text="Administrador"
+            android:textSize="24sp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewEstudiante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="260dp"
+            android:layout_marginTop="450dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageButton
+                android:id="@+id/imgButton2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:padding="0dp"
+                android:paddingTop="50dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/estudiante" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="550dp"
+            android:text="Estudiante"
+            android:textSize="24sp" />
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
